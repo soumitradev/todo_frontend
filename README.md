@@ -1,6 +1,8 @@
 # ToDo++
 ## What?
-This is the next level of my todo list web app. This time, it has a backend written in Python and powered by Flask. It is a CRUD app that uses a RESTful API. This is the code repository for the frontend. It can Create, Read, Update and Delete notes. It can store notes publicly, and you can access these notes from any device anywhere in the world. The frontend for this app is still a work in progress.
+This is the next level of my todo list web app. This time, it has a backend written in Python and powered by Flask. It is a CRUD app that uses a RESTful API. This is the code repository for the frontend. It can Create, Read, Update and Delete notes. It can store notes publicly, and you can access these notes from any device anywhere in the world.
+
+The app can be accessed here: [https://soumitradev.github.io/todo_frontend/](https://soumitradev.github.io/todo_frontend/)
 
 The backend API repo: [https://github.com/soumitradev/todo_backend](https://github.com/soumitradev/todo_backend)
 

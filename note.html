@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style="width: 100%;">
   <head>
-    <meta charset="utf-8">
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -36,37 +36,21 @@
       </div>
     </nav>
     <div class="container" style="padding-top: 1%;">
-      <div class="row">
-        <form class="col s12" id="addnote" action="">
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="title" type="text" name="title" required>
-              <label for="title">Title</label>
-            </div>
-            <div class="input-field col s12">
-              <textarea name="text" id="text" class="materialize-textarea" required></textarea>
-              <label for="text">Enter your notes here</label>
-              <span class="helper-text">Formatting with <a href="https://commonmark.org/help/" target="_blank">Markdown</a> is supported.</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <span class="black-text" style="padding-left: 2%;">Preview</span>
-              <div class="card grey lighten-3" style="border-radius: 20px;">
-                <div class="card-content white-text">
-                  <span class="black-text card-title" id="titleout">Title</span>
-                  <p class="black-text" id="content">Text you type will be formatted and shown here.</p>
-                </div>
+      <div class="row" id="mutablecontainer">
+        <div class="row">
+          <div class="col s12" id="cardcontainer">
+            <div class="card grey lighten-3" style="border-radius: 20px;">
+              <div class="card-content white-text">
+                <span class="black-text card-title" id="titleout">Loading...</span>
+                <h5 class="black-text" id="errtext"></h5><p class="black-text" id="content">
+                  Loading...</p>
               </div>
             </div>
           </div>
-          <a class="btn waves-effect waves-light right green hoverable tooltipped" style="border-radius: 100000000000px;" data-position="top" data-tooltip="Save this as a public note">Save
-            <i class="material-icons-round left">save</i>
-          </a>
-        </form>
-      </div>
+        </div>
+      </div>                
     </div>
-    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/loadnote.js"></script>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="./js/materialize.min.js"></script>
     <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>

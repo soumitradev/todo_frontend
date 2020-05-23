@@ -21,3 +21,8 @@ pre {
 a, p, span {
     font-family: "Roboto";
 }
+
+.material-tooltip {
+    padding: 12px;
+    border-radius: 100000000px;
+}
