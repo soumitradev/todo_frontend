@@ -20,8 +20,7 @@ $("#title").on('change keyup paste', function() {
     document.getElementById('titleout').innerHTML = clean;
 });
 
-$("#addnote").on('submit', function (e) {
-    e.preventDefault();
+$("#savenotebutton").on('click', function () {
     var dirtyTitle = $("#title").val();
     var converter = new showdown.Converter();
     converter.setFlavor('github');

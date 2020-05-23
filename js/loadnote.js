@@ -8,14 +8,12 @@ $( document ).ready(function() {
         dataType: "json",
         complete: function(result){
             var s = result.responseText;
-            console.log(s)
 
             s = s.replace(/\"/g, "\\\"").replace(/\'/g, "\"");
         
             try {
                 JSON.parse(s);
             } catch {
-                console.log("ERR")
                 document.getElementById('titleout').innerHTML = "Oops!";
                 document.getElementById('errtext').innerHTML = "Error <b>404</b>:";
                 document.getElementById('content').innerHTML = "The note you entered does not exist. Please check the URL. Maybe it was deleted?";
